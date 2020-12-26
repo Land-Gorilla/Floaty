@@ -810,10 +810,10 @@ open class Floaty: UIView {
       return
     }
     
-    circleLayer.shadowOffset = CGSize(width: 1, height: 1)
+    circleLayer.shadowOffset = .zero
     circleLayer.shadowRadius = 2
     circleLayer.shadowColor = buttonShadowColor.cgColor
-    circleLayer.shadowOpacity = 0.4
+    circleLayer.shadowOpacity = 1.0
   }
   
   fileprivate func plusBezierPath() -> UIBezierPath {
