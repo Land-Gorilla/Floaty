@@ -240,10 +240,10 @@ open class FloatyItem: UIView {
     if !hasShadow {
       return
     }
-    circleLayer.shadowOffset = CGSize(width: 1, height: 1)
+    circleLayer.shadowOffset = .zero
     circleLayer.shadowRadius = 2
     circleLayer.shadowColor = circleShadowColor.cgColor
-    circleLayer.shadowOpacity = 0.4
+    circleLayer.shadowOpacity = 1.0
     
 //    titleLabel.layer.shadowOffset = CGSize(width: 1, height: 1)
 //    titleLabel.layer.shadowRadius = 2
